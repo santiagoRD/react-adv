@@ -1,11 +1,5 @@
 import { Suspense } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-  Redirect,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom';
 
 import logo from '../logo.svg';
 import { routes } from './routes';
@@ -20,7 +14,7 @@ export const Navigation = () => {
             <ul>
               {routes.map(({ path, name }) => (
                 <li key={path}>
-                  <NavLink to={path} activeClassName='nav-active' exact>
+                  <NavLink to={path} activeClassName='nav-active'>
                     {name}
                   </NavLink>
                 </li>
