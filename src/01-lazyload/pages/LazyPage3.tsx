@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 export const LazyPage3 = () => {
-    return (
-        <h1>Lazy page 3</h1>
-    )
-}
+  return <h1>Lazy page 3</h1>;
+};
+
+export default LazyPage3;
